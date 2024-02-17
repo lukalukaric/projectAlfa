@@ -8,3 +8,5 @@
 /backend/node_modules
 /backend/obj/Debug
 /frontend/.vs
+/frontend/.angular/cache/17.2.0
+/frontend/node_modules

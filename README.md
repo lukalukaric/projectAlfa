@@ -12,6 +12,7 @@ Welcome to Project Alfa, a modern web application featuring a robust backend bui
    ```bash
    npm install -g @angular/cli@17.1.2
    ```
+4. **PostgreSQL (v16.2.1)**: Install PostgreSQL version 16.2.1. You can download it [here](https://www.postgresql.org/).
 
 ## Setup
 

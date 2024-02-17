@@ -1,0 +1,13 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "postgres",
+  "database": "projectAlfa",
+  "synchronize": true,
+  "logging": false,
+  "entities": [ "build/app/Entities/*.js" ],
+  "migrations": [ "build/app/Migrations/*.js" ],
+  "subscribers": [ "build/app/Subscribers/*.js" ]
+}

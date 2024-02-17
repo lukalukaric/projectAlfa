@@ -1,0 +1,5 @@
+<div class="menuContainer" *ngIf="menu !== undefined">
+  <div *ngFor="let item of menu.items">
+    <button (click)="navigate(item.url)">{{item.name}}</button>
+  </div>
+</div>

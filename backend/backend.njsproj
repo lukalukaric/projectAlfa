@@ -33,7 +33,6 @@
     <None Include="server.ts" />
     <Content Include="ormconfig.json" />
     <Content Include="package.json" />
-    <Content Include="README.md" />
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>

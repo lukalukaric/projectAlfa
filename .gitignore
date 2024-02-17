@@ -13,3 +13,5 @@
 /backend2/node_modules
 /backend2/.vs/backend2/FileContentIndex
 /backend2/.vs/backend2/v17
+/backend2/bin
+/backend2/build

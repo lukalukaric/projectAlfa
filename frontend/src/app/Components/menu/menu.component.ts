@@ -6,7 +6,7 @@ import { MenuDTO } from '../../../../../backend/app/DTOs/MenuDTO';
 import { MenuService } from '../../Services/menu.service';
 
 @Component({
-  selector: 'core-menu',
+  selector: 'app-menu',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './menu.component.html',

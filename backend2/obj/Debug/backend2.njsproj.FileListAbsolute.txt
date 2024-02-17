@@ -1,0 +1,3 @@
+E:\Server\ProjectAlfa\backend2\obj\Debug\backend2.njsproj.AssemblyReference.cache
+E:\Server\ProjectAlfa\backend2\obj\Debug\backend2.njsproj.CoreCompileInputs.cache
+E:\Server\ProjectAlfa\backend2\bin\Microsoft.NodejsTools.WebRole.dll

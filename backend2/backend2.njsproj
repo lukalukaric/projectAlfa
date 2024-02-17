@@ -4,6 +4,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>backend2</Name>
     <RootNamespace>backend2</RootNamespace>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -11,7 +12,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8166af6c-4961-4549-bf8a-59158b3dd9d1</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>app.ts</StartupFile>
+    <StartupFile>build/server.ts</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -20,7 +21,7 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
     <EnableTypeScript>true</EnableTypeScript>
-    <StartWebBrowser>false</StartWebBrowser>
+    <StartWebBrowser>False</StartWebBrowser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,10 +30,29 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="app.ts" />
+    <Content Include="ormconfig.json" />
     <Content Include="package.json" />
-    <Content Include="README.md" />
     <Content Include="tsconfig.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\BusinessLayers\" />
+    <Folder Include="app\Controllers\" />
+    <Folder Include="app\DTOs\" />
+    <Folder Include="app\Entities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="app\BusinessLayers\menuBusinessLayer.ts" />
+    <TypeScriptCompile Include="app\BusinessLayers\userBusinessLayer.ts" />
+    <TypeScriptCompile Include="app\Controllers\menuController.ts" />
+    <TypeScriptCompile Include="app\Controllers\userController.ts" />
+    <TypeScriptCompile Include="app\DTOs\MenuDTO.ts" />
+    <TypeScriptCompile Include="app\DTOs\MenuItemDTO.ts" />
+    <TypeScriptCompile Include="app\DTOs\UserDTO.ts" />
+    <TypeScriptCompile Include="app\Entities\Menu.ts" />
+    <TypeScriptCompile Include="app\Entities\MenuItem.ts" />
+    <TypeScriptCompile Include="app\Entities\User.ts" />
+    <TypeScriptCompile Include="server.ts" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>

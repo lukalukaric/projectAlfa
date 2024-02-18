@@ -1,5 +1,6 @@
 import * as express from 'express';
 import { createConnection } from 'typeorm';
+import { LoginController } from './app/Controllers/loginController';
 import { MenuController } from './app/Controllers/menuController';
 import { UserController } from './app/Controllers/userController';
 
@@ -16,6 +17,7 @@ app.use(express.json());
 // Core controllers
 app.use('/user', UserController);
 app.use('/menu', MenuController);
+app.use('/login', LoginController);
 
 
 createConnection()

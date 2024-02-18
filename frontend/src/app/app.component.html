@@ -1,5 +1,5 @@
 <div style="display: flex; flex-direction: column;">
-  <app-menu style="height:25px;"></app-menu>
+  <app-menu *ngIf="isUserLogedIn == true" style="height:25px;"></app-menu>
   <div>
     <router-outlet></router-outlet>
   </div>

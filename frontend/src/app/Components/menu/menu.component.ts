@@ -3,7 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuDTO } from '../../../../../backend/app/DTOs/MenuDTO';
-import { MenuService } from '../../Services/menu.service';
+import { MenuService } from '../../Services/MenuService/menu.service';
 
 @Component({
   selector: 'app-menu',

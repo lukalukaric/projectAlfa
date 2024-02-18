@@ -4,7 +4,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>backend2</Name>
     <RootNamespace>backend2</RootNamespace>
-    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+    <SaveNodeJsSettingsInProjectFile>False</SaveNodeJsSettingsInProjectFile>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -39,13 +39,18 @@
     <Folder Include="app\BusinessLayers\" />
     <Folder Include="app\Controllers\" />
     <Folder Include="app\DTOs\" />
+    <Folder Include="app\DTOs\Common\" />
     <Folder Include="app\Entities\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\BusinessLayers\menuBusinessLayer.ts" />
+    <TypeScriptCompile Include="app\BusinessLayers\loginBusinessLayer.ts" />
     <TypeScriptCompile Include="app\BusinessLayers\userBusinessLayer.ts" />
     <TypeScriptCompile Include="app\Controllers\menuController.ts" />
+    <TypeScriptCompile Include="app\Controllers\loginController.ts" />
     <TypeScriptCompile Include="app\Controllers\userController.ts" />
+    <TypeScriptCompile Include="app\DTOs\Common\MessageResponseDTO.ts" />
+    <TypeScriptCompile Include="app\DTOs\LoginDTO.ts" />
     <TypeScriptCompile Include="app\DTOs\MenuDTO.ts" />
     <TypeScriptCompile Include="app\DTOs\MenuItemDTO.ts" />
     <TypeScriptCompile Include="app\DTOs\UserDTO.ts" />

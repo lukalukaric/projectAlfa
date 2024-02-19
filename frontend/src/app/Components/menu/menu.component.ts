@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuDTO } from '../../../../../backend/app/DTOs/MenuDTO';
 import { MenuService } from '../../Services/MenuService/menu.service';
+import { LoadingService } from '../../Services/LoadingService/loading.service';
 
 @Component({
   selector: 'app-menu',
@@ -14,7 +15,7 @@ import { MenuService } from '../../Services/MenuService/menu.service';
 })
 export class MenuComponent implements OnInit {
   public menu: MenuDTO | undefined = undefined;
-  constructor(private menuService: MenuService, private router: Router) {
+  constructor(private menuService: MenuService, private router: Router, private loadingService: LoadingService) {
 
   }
 
@@ -22,8 +23,10 @@ export class MenuComponent implements OnInit {
     this.getData();
   }
 
-  public async getData() {
-    this.menu = await this.menuService.getMenu().toPromise();
+    public async getData() {
+        this.loadingService.setBusy(true);
+        this.menu = await this.menuService.getMenu().toPromise();
+        this.loadingService.setBusy(false);
   }
 
   public navigate(url: string | undefined) {

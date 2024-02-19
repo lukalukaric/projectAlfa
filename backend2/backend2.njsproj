@@ -54,6 +54,9 @@
     <TypeScriptCompile Include="app\DTOs\MenuDTO.ts" />
     <TypeScriptCompile Include="app\DTOs\MenuItemDTO.ts" />
     <TypeScriptCompile Include="app\DTOs\UserDTO.ts" />
+    <TypeScriptCompile Include="app\Entities\BoardItem.ts" />
+    <TypeScriptCompile Include="app\Entities\BoardColumn.ts" />
+    <TypeScriptCompile Include="app\Entities\Board.ts" />
     <TypeScriptCompile Include="app\Entities\Menu.ts" />
     <TypeScriptCompile Include="app\Entities\MenuItem.ts" />
     <TypeScriptCompile Include="app\Entities\User.ts" />
